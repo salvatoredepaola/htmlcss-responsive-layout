@@ -16,6 +16,9 @@ body{
     max-width: 1140px;
     margin: 0 auto;
 }
+h2{
+    font-size: 30px;
+}
 .flex{
     display: flex;
 }
@@ -54,20 +57,30 @@ button:hover{
 
 .padX50{padding: 50px 0;}
 
+.padBottom50{padding-bottom: 50px;}
+
 /* PADDING X */
 
 /* WIDTH */
 
+.col30 {width: 30%;}
 .col50 {width: 50%;}
+.col70 {width: 70%;}
 
+.treterzi{width: calc(100% / 3 * 3);}
 .dueterzi{width: calc(100% / 3 * 2 - 10px);}
 .unterzo{width: calc(100% / 3 * 1 - 10px);}
 
 /* HEIGHT */
 
+.h200{height: 200px;}
+.h600{height: 600px;}
+.h930{height: 930px;}
+
 /* JUSTIFY */
 
 .spaceBetween {justify-content: space-between;}
+
 
 /* ALIGN ITEMS */
 
@@ -76,10 +89,12 @@ button:hover{
 
 /* TESTO */
 
+.textCenter{text-align: center;}
 .textWhite{color: white;}
 
 /* SFONDI */
 
+.bgBlack {background-color: #333333;}
 .bgViolet {background-color: #9792e4;}
 
 
@@ -104,3 +119,20 @@ a{
     border-radius: 15px;
     height: 345px;
 }
+.boxViolet{
+    background-color: #9792e4;
+    border-radius: 50px;
+    height: 280px;
+}
+.boxWhite{
+    background-color: white;
+    border-radius: 15px;
+    height: 400px;
+}
+/* GET STARTED */
+.getStarted{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* FOOTER */
