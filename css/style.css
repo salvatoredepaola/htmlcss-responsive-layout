@@ -59,7 +59,7 @@ button:hover{
     cursor: pointer;
 }
 p{
-    line-height: 1.6;
+    line-height: 2;
 }
 
 /************************************************
@@ -69,6 +69,9 @@ p{
 /* PADDING */
 .pad2Rem {padding: 1rem 2rem;}
 .pad{padding: 10px 50px;}
+.lastButton{
+    padding: 1.5em 5rem;
+}
 
 
 .padY1Rem{padding: 1rem 0;}
@@ -83,7 +86,10 @@ p{
 
 
 .padX2Rem{padding: 0 2rem;}
+.padX3Rem{padding: 0 3rem;}
 .pad20 {padding: 0 20px;}
+.padX1Rem{padding: 0 1rem;}
+.padXMidRem{padding: 0.5rem;}
 
 .padTop2Rem{padding-top: 2rem;}
 .padBottom2Rem{padding-bottom: 2rem;}
@@ -92,14 +98,14 @@ p{
 .marginBottom50{margin-bottom: 50px;}
 .marginTop2Rem{margin-top: 2rem;}
 
-.padX1Rem{padding: 0 1rem;}
+
 
 /* WIDTH */
 .col20 {width: 20%;}
 .col40 {width: 40%;}
 .col50 {width: 50%;}
 .col60 {width: 60%;}
-.col70 {width: 70%;}
+.col70 {max-width: 70%;}
 .col80 {width: 80%;}
 
 .treterzi{width: calc(100% / 3 * 3);}
@@ -132,6 +138,7 @@ p{
 .textWhite{color: white;}
 .textViolet{color: #9792e4;}
 .textBlue{color: #0084fd;}
+.textOrange{color: #fdc15f;}
 
 .text25{font-size: 25px;}
 .text2Rem{font-size: 2rem;}
@@ -211,6 +218,9 @@ a{
 /* TESTIMONIALS */
 #testimonials{}
 
+/* ABOUT US */
+
+
 /* FOOTER */
 
 @media screen and (max-width: 767px){
@@ -251,6 +261,19 @@ a{
     .padViolet{
         flex-direction: column;
     }
+    .aboutUs{
+        flex-direction: column;
+        
+    }
+    .col30.flex.column.alignItemCenter{
+        align-items: flex-start;
+    }
+    .getStarted{
+        padding: 2rem;
+    }
+    .textOrange{
+        font-size: 40px;
+    }
 }
 
 @media screen and (min-width:768px) and (max-width: 992px){
@@ -288,6 +311,12 @@ a{
     }
     .couple{
         width: calc((100% / 2) * 1 - 10px );
+    }
+    .col70{
+        width: 60%;
+    }
+    .col30{
+        width: 40%;
     }
 }
 
