@@ -73,8 +73,12 @@ p{
 
 .padY1Rem{padding: 1rem 0;}
 .padY2Rem{padding: 2rem 0;}
-.padY3Rem{padding: 2rem;}
+.padY3Rem{padding: 3rem 0;}
 .padY5Rem{padding: 5rem 0 ;}
+
+.pad2Rem{padding: 2rem;}
+
+
 
 .padX2Rem{padding: 0 2rem;}
 .pad20 {padding: 0 20px;}
@@ -83,15 +87,17 @@ p{
 
 .marginAuto{margin-top: auto;}
 .marginBottom50{margin-bottom: 50px;}
+.marginTop2Rem{margin-top: 2rem;}
 
 .padX1Rem{padding: 0 1rem;}
 
 /* WIDTH */
-
+.col20 {width: 20%;}
 .col40 {width: 40%;}
 .col50 {width: 50%;}
 .col60 {width: 60%;}
 .col70 {width: 70%;}
+.col80 {width: 80%;}
 
 .treterzi{width: calc(100% / 3 * 3);}
 .dueterzi{width: calc((100% / 3) * 2 - 5px );}
@@ -121,9 +127,11 @@ p{
 
 .textCenter{text-align: center;}
 .textWhite{color: white;}
+.textViolet{color: #9792e4;}
 .textBlue{color: #0084fd;}
 
 .text25{font-size: 25px;}
+.text2Rem{font-size: 2rem;}
 .text80{font-size: 80px;}
 
 .bold{font-weight: 800;}
@@ -187,6 +195,23 @@ a{
     justify-content: center;
 }
 
+/* TESTIMONIALS */
+
+.padViolet{
+    padding: 2rem 1rem;
+}
+
+.profilePic{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    background-image: url("../img/testimonial1.jpg");
+    background-position: center;
+    background-size: cover;
+}
+/* TESTIMONIALS */
+#testimonials{}
+
 /* FOOTER */
 
 @media screen and (max-width: 767px){
@@ -227,6 +252,9 @@ a{
         width: 100%;
         height: 100%;
     }
+    .padViolet{
+        flex-direction: column;
+    }
 }
 
 @media screen and (min-width:768px) and (max-width: 992px){
@@ -250,11 +278,12 @@ a{
         width: 100%;
         padding: 5rem 2rem;
     }
-    .boxed880,
-    .relative{
+    .boxed880{
         display: flex;
         flex-direction: column;
         padding: 2rem 0;
+    }
+        
     }
     .text25{
         font-size: 50px;
@@ -266,9 +295,6 @@ a{
     .textWhite{
         padding-bottom: 2rem;
     }
-
-    
-}
 
 @media screen and (min-width: 993px){
     .navigation{
