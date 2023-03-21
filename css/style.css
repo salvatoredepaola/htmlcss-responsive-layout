@@ -52,7 +52,7 @@ a{
 button{
     border: none;
     border-radius: 20px;
-    padding: 0.5rem;
+    padding: 0.5rem 2rem;
 }
 a:hover,
 button:hover{
@@ -77,12 +77,15 @@ p{
 .padY5Rem{padding: 5rem 0 ;}
 
 .pad2Rem{padding: 2rem;}
+.pad3Rem{padding: 3rem;}
+.pad5Rem{padding: 5rem;}
 
 
 
 .padX2Rem{padding: 0 2rem;}
 .pad20 {padding: 0 20px;}
 
+.padTop2Rem{padding-top: 2rem;}
 .padBottom2Rem{padding-bottom: 2rem;}
 
 .marginAuto{margin-top: auto;}
@@ -134,6 +137,8 @@ p{
 .text2Rem{font-size: 2rem;}
 .text80{font-size: 80px;}
 
+.number{font-size: 50px;}
+
 .bold{font-weight: 800;}
 .italic{font-style: oblique;}
 
@@ -143,6 +148,7 @@ p{
 .bgWhite {background-color: white;}
 .bgBlack {background-color: #333333;}
 .bgViolet {background-color: #9792e4;}
+.bgLightBlue {background-color: #b5ddff;}
 
 
 /************************************************
@@ -165,18 +171,11 @@ a{
 
 /* MAIN */
 
-.boxBlue{
-    background-color: #b5ddff;
-    border-radius: 15px;
-}
 .box{
     border-radius: 50px;
 }
-.boxWhite{
-    background-color: white;
-    border-radius: 15px;
-    height: 400px;
-}
+.smallBR{border-radius: 15px;}
+
 /* GET STARTED */
 .getStarted{
     max-width: 600px;
@@ -242,9 +241,6 @@ a{
         flex-direction: column;
         padding: 2rem;
     }
-    .textWhite{
-        padding-bottom: 2rem;
-    }
     .padY5Rem{
         width: 100%;
     }
@@ -283,8 +279,6 @@ a{
         flex-direction: column;
         padding: 2rem 0;
     }
-        
-    }
     .text25{
         font-size: 50px;
     }
@@ -292,9 +286,11 @@ a{
         width: 100%;
         height: 100%;
     }
-    .textWhite{
-        padding-bottom: 2rem;
+    .couple{
+        width: calc((100% / 2) * 1 - 10px );
     }
+}
+
 
 @media screen and (min-width: 993px){
     .navigation{
