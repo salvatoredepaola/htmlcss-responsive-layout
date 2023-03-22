@@ -26,6 +26,9 @@ h2{
 .flex{
     display: flex;
 }
+.block{
+    display: block;
+}
 .column{
     flex-direction: column;
 }
@@ -326,6 +329,9 @@ footer a{
     }
     .col30{
         width: 40%;
+    }
+    .col80{
+        width: 70%;
     }
 }
 
